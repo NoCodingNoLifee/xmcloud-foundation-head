@@ -21,14 +21,17 @@ const nextConfig = {
   i18n: {
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
-    locales: ['en', 'fr-CA', 'fr'],
+    locales: ['en', 'fr-CA', 'fr', 'uk-UA', 'default'],
     // This is the locale that will be used when visiting a non-locale
     // prefixed path e.g. `/styleguide`.
-    defaultLocale: jssConfig.defaultLanguage,
+    defaultLocale: 'default',//jssConfig.defaultLanguage,
+    //localeDetection: false,
   },
 
   // Enable React Strict Mode
   reactStrictMode: true,
+
+  //trailingSlash: true,
 
   // use this configuration to ensure that only images from the whitelisted domains
   // can be served from the Next.js Image Optimization API
